@@ -11,7 +11,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def main():
-	# file_name=input('Enter Filename? ')
+	file_name=input('Enter Filename? ')
 	fillProxyPool()
 	lock=multiprocessing.Manager().Lock()
 	emails=open(FILE_NAME,encoding='utf-8').read().splitlines()
